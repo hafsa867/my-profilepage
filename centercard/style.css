@@ -1,0 +1,36 @@
+
+   
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: bisque;
+}
+
+.main{
+    
+   height: 500px;
+   width:700px;
+   
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:250px;
+    height:300px;
+    text-align:center;}
+    
+
+
+.card img{
+    width:350px;
+    height:300px;
+    border: 2px solid black;
+}
+
