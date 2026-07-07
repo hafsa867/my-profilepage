@@ -1,24 +1,11 @@
 
-   
-
 body{
     margin:0;
-    height:100vh;
+    height: 100dvh;
     display:flex;
     justify-content:center;
     align-items:center;
     background-color: bisque;
-}
-
-.main{
-    
-   height: 500px;
-   width:700px;
-   
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 
 .card{
