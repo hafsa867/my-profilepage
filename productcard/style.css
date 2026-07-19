@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    display: flex;
+    height: 400px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 12px;
+    gap: 5px;
+    background-color: white;
+    
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+.contant{
+    text-align: center;
+}
+.card img{
+    width: 150px;
+    height: 250px;
+    border: 1px solid blue;}
+    .price{
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid black; 
+        border-radius: 8px;
+        background-color: green;
+    }
+    button{
+        
+        border-radius: 10px;
+ background-color: black;
+    color: white; 
+    padding: 10px 15px; gap: 20px;
+}
+.button{
+display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+
+
+
+
+
