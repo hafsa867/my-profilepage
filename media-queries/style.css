@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 900px;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    
+}
+.item{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;}
+.item1{
+    background-color: rgb(182, 133, 227);
+}
+.item2{
+    background-color: rgb(222, 128, 128);
+}
+.item3{
+    background-color: rgb(49, 223, 165);
+}
+.item4{
+    background-color: rgb(224, 120, 188);
+}
+
+@media screen and (min-width: 700px){
+.item{
+    width: 200px;
+    height: 200px;
+}
+}
+    
+
