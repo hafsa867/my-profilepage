@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$primary-green: #0d6e60; 
+$secondray-color: #ffffff;
+$text-green:#008D79;
+$bg-color: linear-gradient(135deg, #021a15 0%, #0a4038 50%, #062e27 100%); // Dark green gradient background
+.container {
+  background: $bg-color;
+  color: $secondray-color;
+  min-height: 100vh;
+
+  
+  font-family: "Poppins", sans-serif;
+}
+header {
+  
+  .container-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+  padding: 20px 20px;}
+    .logo{
+      width: 140px;
+      height: 60px;
+    }
+nav {
+      display: flex;
+      gap: 30px;
+      
+      a {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        all: unset;
+      }
+       }
+
+        button {
+            background-color: #021a15;
+      color: $secondray-color;
+      border: 1px solid $secondray-color;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+}
+
+
+    .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 10px 20px;
+  padding-top: 50px;
+  .hero-left {
+    flex: 1;
+    max-width: 550px;}
+    
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+       margin-bottom: 20px;
+      
+      span {
+        color: $text-green;
+      }
+    }
+     }
+
+     p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 30px;
+    }
+
+    .hero-right {
+    flex: 1;
+    display: flex;
+justify-content: right;
+
+}
+
+.doctor-card {
+      width: 100%;
+      max-width: 450px;
+      
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px; 
+      }
+    }
+  
+
+    

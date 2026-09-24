@@ -1,0 +1,191 @@
+:root {
+  --color-bg: color(bg);
+  --color-panel: color(panel);
+  --color-ink: color(ink);
+  --color-muted: color(muted);
+  --color-accent: color(accent);
+  --color-brand: color(brand);
+  --color-line: color(line);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1080px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  padding-block: 48px;
+}
+
+.top-cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-top: 3px solid var(--color-brand);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(18, 24, 27, 0.04), 0 8px 24px rgba(18, 24, 27, 0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+.card.border-green {
+  border-top: 3px solid var(--color-brand);
+}
+.card.border-green .card-header {
+  color: var(--color-brand);
+}
+.card.border-orange {
+  border-top: 3px solid var(--color-accent);
+}
+.card.border-orange .card-header {
+  color: var(--color-accent);
+}
+.card.border-gray {
+  border-top: 3px solid #9ca3af;
+}
+.card .card__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+.card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.card p {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-line);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+.btn {
+  border: none;
+  background: var(--color-brand);
+  color: var(--color-panel);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 160ms ease;
+}
+.btn:hover {
+  background: color-mix(in srgb, var(--color-brand) 85%, black);
+}
+.btn.btn-orange {
+  background: var(--color-accent);
+}
+.btn.btn-orange:hover {
+  background: color-mix(in srgb, var(--color-accent) 85%, black);
+}
+.btn.btn-dark-green {
+  background: #064e3b;
+  color: white;
+}
+.btn.btn-dark-green:hover {
+  background: color-mix(in srgb, #064e3b 85%, black);
+}
+
+.large-green-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #064e3b;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(18, 24, 27, 0.04), 0 8px 24px rgba(18, 24, 27, 0.08);
+}
+.large-green-card .main-content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--color-panel);
+  margin-bottom: 8px;
+}
+.large-green-card .main-content p {
+  color: color-mix(in srgb, white 75%, transparent);
+  font-size: 0.875rem;
+}
+.large-green-card .large-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+.large-green-card .large-card-footer .contact-text {
+  font-size: 1rem;
+  color: color-mix(in srgb, white 75%, transparent);
+}
+.large-green-card .large-card-footer .btn-light-green {
+  background-color: #115e59;
+  color: white;
+}
+.large-green-card .large-card-footer .btn-light-green:hover {
+  background: color-mix(in srgb, #115e59 85%, black);
+}/*# sourceMappingURL=main.css.map */

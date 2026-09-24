@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "variables" as v;
+
+@function color($key){
+    @if not map.has-key(v.$colors, $key) {
+        @error "unknown color key: `#{$key}`.";
+        @return map.get(v.$colors, $key);
+
+    }
+}
+ 
+@function spacers($key){
+@if not map.has-key($spacers, $key) {
+    @error "Unknown spacer key: `#{$key}`. Available: #{map.keys($spacers)}";
+}
+@return map.get($spacers, $key);}

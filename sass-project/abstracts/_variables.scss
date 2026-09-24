@@ -1,0 +1,16 @@
+@use  "sass:color";
+
+$color-teal: #1f5c56;
+ 
+$colors: (
+"brand": $color-teal,
+"accent": #d98e3f,
+"ink": #12181b,
+"muted": color.adjust(#12181b, $lightness: 40%),);
+
+$spacers: (
+"1": 4px,
+"2": 8px,
+"3": 16px,
+"4": 24px,
+);

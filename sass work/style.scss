@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin custom-btn($color-surface: #3498db, $padding:10px 20px)
+{display: inline-block;
+    padding: $padding;
+    background-color: $color-surface;
+    border-radius: 4px;
+    color: #fff;}
+    %buttom-placeholder {
+        padding: $padding;
+        background-color: $color-primary;
+        border-radius: 4px;
+        color: #fff;
+    }
+
+$color-primary:#eaf187;
+$color-secondary:#4fd76a;
+$color-surface:#3498db ;
+
+$color-bg: rgb(243, 161, 199);
+
+
+.top-container {
+    background-color: $color-secondary;
+    height: 50vh; 
+    @include flex-center; 
+    .green-box {
+    background-color: $color-primary;
+    padding: 20px;
+}
+
+}
+.bottom-container{
+    background-color: $color-bg;
+    @include flex-center;
+    height: 50vh;
+    .white-box{
+    background-color: lighten($color-bg, 10%) ;
+    padding: 20px;}
+    .btn-blue{
+    @include custom-btn();
+}
+.btn-red{
+    @include custom-btn($color-surface: #ec4141);
+
+}
+}
+.btn-green{@extend %button-placeholder;}
+
+
+    

@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+.container {
+  max-width: 1080px;
+  margin-inline: auto;
+  padding-inline: 24px; // Spacing function hata kar fixed value de di
+  padding-block: 48px;  // Spacing function hata kar fixed value de di
+}
+
+.top-cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}

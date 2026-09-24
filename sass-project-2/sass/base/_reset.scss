@@ -1,0 +1,40 @@
+
+
+:root {
+  --color-bg: color(bg);
+  --color-panel: color(panel);
+  --color-ink: color(ink);
+  --color-muted: color(muted);
+  --color-accent: color(accent);
+  --color-brand: color(brand);
+  --color-line: color(line);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}

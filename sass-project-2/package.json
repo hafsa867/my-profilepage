@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "sass": "^1.104.1"
+  },
+  "scripts": {
+    "sass:build": "sass sass/main.scss css/main.css --style=expanded --source-map",
+    "sass:watch": "sass sass/main.scss css/main.css --watch --source-map",
+    "sass:prod": "sass sass/main.scss css/main.css --style=compressed --no-source-map"
+  }
+}
