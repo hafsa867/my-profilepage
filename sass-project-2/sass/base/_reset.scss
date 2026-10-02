@@ -1,13 +1,14 @@
 
-
+@use "../abstracts" as *;
 :root {
-  --color-bg: color(bg);
-  --color-panel: color(panel);
-  --color-ink: color(ink);
-  --color-muted: color(muted);
-  --color-accent: color(accent);
-  --color-brand: color(brand);
-  --color-line: color(line);
+  --color-bg: #{color("bg")};
+  // ${color("bg")} => #f6f4ef
+  --color-panel: #{color("panel")};
+  --color-ink: #{color("ink")};
+  --color-muted: #{color("muted")};
+  --color-accent: #{color("accent")};
+  --color-brand: #{color("brand")};
+  --color-line: #{color("line")};
 }
 
 *,
